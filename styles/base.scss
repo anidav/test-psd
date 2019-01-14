@@ -20,6 +20,22 @@
   align-items: center;
 }
 
+.align-end {
+  align-items: flex-end;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
 ul {
   list-style: none;
   padding-left: 0;

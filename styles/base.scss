@@ -1,4 +1,5 @@
-@import "./variables.scss";
+@import "variables";
+@import "./mixins";
 
 .d-flex {
   display: flex;
@@ -39,4 +40,14 @@
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+.blue-small-text {
+  display: block;
+  @include text-with-spacing($light-blue, 900);
+}
+
+.dark-small-text {
+  display: block;
+  @include text-with-spacing($dark-grey, 900);
 }

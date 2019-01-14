@@ -1,47 +1,78 @@
 @import "../variables";
 
-.header {
-  margin: 40px 50px 0 100px;
+.content {
+  max-width: 1440px;
+  margin: 0 auto;
 
-  &-content {
-    width: 95%;
+  .header {
+    margin: 40px 50px 0 100px;
 
-    &-navigation {
-      width: 35%;
+    &-content {
+      width: 93%;
 
-      &-logo {
+      &-navigation {
+        width: 45%;
 
+        &-item {
+          padding: 0 20px;
+          @include text-with-spacing($dark-grey, 900);
+        }
       }
 
-      &-item {
-        font-size: 9px;
-        padding: 0 20px;
-        font-weight: 700;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-        font-family: $roboto-font;
+      &-cover {
+        margin-top: 30px;
+        position: relative;
+
+        &-image {
+          width: 87%;
+
+          img {
+            width:100%;
+            box-shadow: -6px 19px 61px 2px $shadow-color;
+          }
+        }
+
+        &-description {
+          position: absolute;
+          top: 200px;
+          left: 0;
+
+          .description-title {
+            font-size: 62px;
+            font-weight: 700;
+            color: $dark-grey;
+            font-family: $playfair-font;
+          }
+
+          .description-text {
+            font-size: 14px;
+            font-weight: 400;
+            color: $grey;
+            font-family: $poppins-font;
+          }
+        }
+      }
+
+      .page {
+        width: 13%;
       }
     }
-  }
 
-  &-links {
-    width: 5%;
+    &-links {
+      width: 5%;
+      margin-left: 2%;
 
-    &-items {
-      font-size: 9px;
-      padding: 30px 0;
-      font-weight: 700;
-      color: $light-grey;
-      letter-spacing: 2px;
-      transform: rotate(-90deg);
-      text-transform: uppercase;
-      font-family: $roboto-font;
-    }
+      &-items {
+        padding: 40px 0;
+        transform: rotate(-90deg);
+        @include text-with-spacing($light-grey, 900);
+      }
 
-    &-icons {
-      width: 20px;
-      height: 20px;
-      margin-top: 35px;
+      &-icons {
+        width: 18px;
+        height: 18px;
+        margin-top: 35px;
+      }
     }
   }
 }

@@ -1,4 +1,5 @@
-@import "./variables.scss";
+@import "variables";
+@import "./mixins";
 
 .d-flex {
   display: flex;
@@ -20,7 +21,33 @@
   align-items: center;
 }
 
+.align-end {
+  align-items: flex-end;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+.blue-small-text {
+  display: block;
+  @include text-with-spacing($light-blue, 900);
+}
+
+.dark-small-text {
+  display: block;
+  @include text-with-spacing($dark-grey, 900);
 }

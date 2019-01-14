@@ -1,19 +1,26 @@
 @import "./variables.scss";
 
-h1 {
-  color: $green;
-  font-size: 30px;
-  font-family: $roboto-font;
+.d-flex {
+  display: flex;
 }
 
-h2 {
-  color: red;
-  font-size: 30px;
-  font-family: $playfair-font;
+.flex-col {
+  flex-direction: column;
 }
 
-h3 {
-  color: darkslategray;
-  font-size: 30px;
-  font-family: $poppins-font;
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
 }

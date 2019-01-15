@@ -38,17 +38,11 @@
           left: 0;
 
           .description-title {
-            font-size: 62px;
-            font-weight: 700;
-            color: $dark-grey;
-            font-family: $playfair-font;
+            @include text-styles($dark-grey, 62px, 700, $playfair-font);
           }
 
           .description-text {
-            font-size: 14px;
-            font-weight: 400;
-            color: $grey;
-            font-family: $poppins-font;
+            @include text-styles($grey, 14px, 400, $poppins-font);
           }
         }
       }
@@ -73,6 +67,16 @@
         height: 18px;
         margin-top: 35px;
       }
+    }
+  }
+
+  .medias-section {
+    margin-top: 150px;
+
+    &-title {
+      padding: 0 10px;
+      text-align: center;
+      @include text-styles($dark-grey, 26px, 400, $playfair-font);
     }
   }
 }

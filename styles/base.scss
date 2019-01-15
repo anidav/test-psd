@@ -46,6 +46,11 @@ ul {
   padding-left: 0;
 }
 
+figure {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .blue-small-text {
   @include text-with-spacing($light-blue, 900);
 }
@@ -84,3 +89,10 @@ ul {
   display: block;
 }
 //
+
+.vertical-line {
+  width: 2px;
+  height: 100px;
+  margin: 60px 0;
+  background-color: $light-blue;
+}

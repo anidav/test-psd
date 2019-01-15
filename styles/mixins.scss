@@ -1,8 +1,10 @@
-@mixin text-with-spacing ($color, $font-weight) {
+@mixin text-styles ($color, $font-size, $font-weight, $font-family) {
   color: $color;
-  font-size: 9px;
+  font: $font-weight $font-size $font-family;
+}
+
+@mixin text-with-spacing ($color, $font-weight) {
   letter-spacing: 4px;
   text-transform: uppercase;
-  font-family: $roboto-font;
-  font-weight: $font-weight;
+  @include text-styles($color, 9px, $font-weight, $roboto-font);
 }

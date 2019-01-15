@@ -1,6 +1,11 @@
 @import "variables";
 @import "./mixins";
 
+body {
+  margin: 0;
+  background-color: $black;
+}
+
 .d-flex {
   display: flex;
 }

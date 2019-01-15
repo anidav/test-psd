@@ -3,9 +3,11 @@
 .content {
   max-width: 1440px;
   margin: 0 auto;
+  background-color: $white;
 
   .header {
-    margin: 40px 50px 0 100px;
+    padding-top: 40px;
+    margin: 0 50px 0 100px;
 
     &-content {
       width: 93%;
@@ -108,5 +110,12 @@
         position: absolute;
       }
     }
+  }
+
+  .slider-section {
+    opacity: 0.5;
+    height: 750px;
+    margin-top: -50px;
+    background-image: url("/images/slider-bg.png");
   }
 }

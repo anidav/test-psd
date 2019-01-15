@@ -78,5 +78,35 @@
       text-align: center;
       @include text-styles($dark-grey, 26px, 400, $playfair-font);
     }
+
+    &-wrapper {
+      margin-left: 100px;
+      position: relative;
+
+      &-image {
+        width: 46%;
+
+        img {
+          width: 100%;
+        }
+
+        &-description {
+          margin-left: 100px;
+
+          &-text {
+            margin: 50px 0;
+            @include text-styles($grey, 14px, 400, $poppins-font);
+          }
+        }
+      }
+
+      &-video {
+        top: 0;
+        width: 50%;
+        right: 10%;
+        height: 550px;
+        position: absolute;
+      }
+    }
   }
 }

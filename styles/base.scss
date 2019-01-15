@@ -5,6 +5,10 @@
   display: flex;
 }
 
+.d-block {
+  display: block;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -43,11 +47,40 @@ ul {
 }
 
 .blue-small-text {
-  display: block;
   @include text-with-spacing($light-blue, 900);
 }
 
 .dark-small-text {
-  display: block;
   @include text-with-spacing($dark-grey, 900);
 }
+
+//base styles for header dropdowns
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  z-index: 1;
+  display: none;
+  min-width: 110px;
+  position: absolute;
+  background-color: $white;
+  box-shadow: 0 8px 16px 0 $shadow-color;
+}
+
+.dropdown-content a {
+  padding: 12px;
+  display: block;
+  color: $dark-grey;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {background-color: $light-grey}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+//

@@ -1,6 +1,11 @@
 @import "variables";
 @import "./mixins";
 
+body {
+  margin: 0;
+  background-color: $black;
+}
+
 .d-flex {
   display: flex;
 }
@@ -41,6 +46,14 @@
   padding: 0;
 }
 
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -58,6 +71,11 @@ figure {
 .dark-small-text {
   @include text-with-spacing($dark-grey, 900);
 }
+
+.grey-small-text {
+  @include text-with-spacing($grey, 700);
+}
+
 
 //base styles for header dropdowns
 

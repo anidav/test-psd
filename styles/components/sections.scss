@@ -1,5 +1,7 @@
 @import "../variables";
 
+// styles for medias section (1)
+
 .medias-section {
   margin-top: 150px;
 
@@ -40,8 +42,12 @@
   }
 }
 
+// styles for slider section (2)
+
 .slider-section {
   margin-top: -50px;
+  background-size: 70%;
+  background-repeat-y: no-repeat;
   background-image: url("/images/slider-bg.png");
   box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.6);
 
@@ -87,3 +93,58 @@
     }
   }
 }
+
+// styles for training section (3)
+
+.training-section {
+  margin: 170px 0 120px 180px;
+
+  &-first {
+    margin-bottom: 120px;
+
+    .training-title {
+      background-image: url("/images/01@1X.png");
+    }
+
+  }
+
+  &-second {
+    .training-title {
+      background-image: url("/images/02@1X.png");
+    }
+
+    .training-description {
+      width: 59%;
+    }
+  }
+
+  .training-title {
+    height: 110px;
+    background-repeat: no-repeat;
+
+    &-text {
+      @include text-styles($dark-grey, 42px, 700, $playfair-font);
+    }
+  }
+
+  .title-border {
+    width: 25px;
+    height: 2px;
+    margin: 18px 0 30px 0;
+    background-color: $light-blue;
+  }
+
+  .training-description {
+    line-height: 25px;
+    margin-bottom: 70px;
+    @include text-styles($grey, 14px, 400, $poppins-font);
+  }
+
+  .rotated-text {
+    width: 100px;
+    height: 100px;
+    color: $light-grey;
+    transform: rotate(-90deg);
+  }
+}
+

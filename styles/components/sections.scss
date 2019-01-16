@@ -1,0 +1,89 @@
+@import "../variables";
+
+.medias-section {
+  margin-top: 150px;
+
+  &-title {
+    padding: 0 10px;
+    text-align: center;
+    @include text-styles($dark-grey, 26px, 400, $playfair-font);
+  }
+
+  &-wrapper {
+    margin-left: 100px;
+    position: relative;
+
+    &-image {
+      width: 46%;
+
+      img {
+        width: 100%;
+      }
+
+      &-description {
+        margin-left: 100px;
+
+        &-text {
+          margin: 50px 0;
+          @include text-styles($grey, 14px, 400, $poppins-font);
+        }
+      }
+    }
+
+    &-video {
+      top: 0;
+      width: 50%;
+      right: 10%;
+      height: 550px;
+      position: absolute;
+    }
+  }
+}
+
+.slider-section {
+  margin-top: -50px;
+  background-image: url("/images/slider-bg.png");
+  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.6);
+
+  &-title {
+    padding-top: 220px;
+
+    &-text {
+      @include text-styles($dark-grey, 42px, 700, $playfair-font);
+    }
+  }
+
+  &-content {
+    margin-top: 150px;
+    margin-bottom: 70px;
+    justify-content: flex-start;
+
+    &-item {
+      width: 250px;
+      height: 320px;
+      margin-left: 170px;
+      position: relative;
+      background-color: $light-grey;
+
+      &-wrapper {
+        left: 25%;
+        bottom: 8%;
+        width: 330px;
+        position: absolute;
+
+        .item-description {
+          margin-top: 30px;
+
+          &-title {
+            @include text-styles($dark-grey, 26px, 400, $playfair-font);
+          }
+
+          &-price {
+            margin-top: 20px;
+            @include text-styles($light-pink, 20px, 400, $poppins-font);
+          }
+        }
+      }
+    }
+  }
+}

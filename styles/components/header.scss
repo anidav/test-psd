@@ -1,0 +1,75 @@
+@import "../variables";
+
+.content {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: $white;
+
+  .header {
+    padding-top: 40px;
+    margin: 0 50px 0 100px;
+
+    &-content {
+      width: 93%;
+
+      &-navigation {
+        width: 45%;
+
+        &-item {
+          padding: 0 20px;
+          @include text-with-spacing($dark-grey, 900);
+        }
+      }
+
+      &-cover {
+        margin-top: 30px;
+        position: relative;
+
+        &-image {
+          width: 87%;
+
+          img {
+            width:100%;
+            box-shadow: -6px 19px 61px 2px $shadow-color;
+          }
+        }
+
+        &-description {
+          position: absolute;
+          top: 35%;
+          left: 0;
+
+          .description-title {
+            @include text-styles($dark-grey, 62px, 700, $playfair-font);
+          }
+
+          .description-text {
+            @include text-styles($grey, 14px, 400, $poppins-font);
+          }
+        }
+      }
+
+      .page {
+        width: 13%;
+      }
+    }
+
+    &-links {
+      width: 5%;
+      margin-left: 2%;
+
+      &-items {
+        padding: 40px 0;
+        cursor: pointer;
+        transform: rotate(-90deg);
+        @include text-with-spacing($light-grey, 900);
+      }
+
+      &-icons {
+        width: 18px;
+        height: 18px;
+        margin-top: 35px;
+      }
+    }
+  }
+}

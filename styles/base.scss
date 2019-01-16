@@ -6,6 +6,10 @@ body {
   background-color: $black;
 }
 
+a {
+  text-decoration: none;
+}
+
 .d-flex {
   display: flex;
 }
@@ -98,7 +102,6 @@ figure {
   display: block;
   color: $dark-grey;
   letter-spacing: 2px;
-  text-decoration: none;
 }
 
 .dropdown-content a:hover {background-color: $light-grey}

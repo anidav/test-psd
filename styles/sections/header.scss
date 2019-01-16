@@ -60,6 +60,7 @@
 
       &-items {
         padding: 40px 0;
+        cursor: pointer;
         transform: rotate(-90deg);
         @include text-with-spacing($light-grey, 900);
       }

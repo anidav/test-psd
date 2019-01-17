@@ -26,6 +26,9 @@
 
 @media (max-width: 768px) {
   .content {
+
+    //training section styles
+
     .training-section {
 
       &-wrapper {
@@ -51,6 +54,40 @@
 
         .training-description {
           width: 90%;
+        }
+      }
+    }
+
+    //join-club section styles
+
+    .join-club-section {
+
+      .join-form-input-wrapper {
+        width: 83%;
+      }
+
+      &-content {
+        flex-direction: column;
+
+        .join-image-wrapper {
+          width: 100%;
+
+          figure {
+            margin-left: 20px;
+            margin-right: 0;
+          }
+        }
+
+        .join-image-description {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 30px 0;
+
+          &-title {
+            margin-right: 0;
+          }
         }
       }
     }

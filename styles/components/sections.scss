@@ -210,15 +210,17 @@
     }
   }
 
-  .join-image-wrapper {
-    width: 50%;
-  }
+  &-content {
+    .join-image-wrapper {
+      width: 50%;
+    }
 
-  .join-image-description {
+    .join-image-description {
 
-    &-title {
-      margin: 40px;
-      @include text-styles($dark-grey, 32px, 700, $playfair-font);
+      &-title {
+        margin: 40px;
+        @include text-styles($dark-grey, 32px, 700, $playfair-font);
+      }
     }
   }
 }

@@ -1,11 +1,12 @@
-@import "../variables";
+//styles for header section
 
 .content {
   max-width: 1440px;
   margin: 0 auto;
   background-color: $white;
 
-  .header {
+  .header,
+  .footer {
     padding-top: 40px;
     margin: 0 50px 0 100px;
 
@@ -29,7 +30,6 @@
           width: 87%;
 
           img {
-            width:100%;
             box-shadow: -6px 19px 61px 2px $shadow-color;
           }
         }
@@ -68,7 +68,7 @@
       &-icons {
         width: 18px;
         height: 18px;
-        margin-top: 35px;
+        margin-top: 30px;
       }
     }
   }

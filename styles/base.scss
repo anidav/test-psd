@@ -72,6 +72,19 @@ figure {
   margin-bottom: 0;
 }
 
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
 .blue-small-text {
   @include text-with-spacing($light-blue, 900);
 }

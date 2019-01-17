@@ -23,7 +23,7 @@
       }
 
       &-description {
-        margin-left: 100px;
+        margin-left: 35px;
 
         &-text {
           margin: 50px 0;
@@ -99,16 +99,37 @@
 .training-section {
   margin: 170px 0 120px 180px;
 
+  &-wrapper {
+    width: 40%;
+  }
+
   &-first {
-    margin-bottom: 120px;
+    margin: 0 100px 120px 0;
+
+    .rotated-text {
+      top: 10%;
+      right: -5%;
+      color: $light-grey;
+      transform: rotate(-90deg);
+    }
 
     .training-title {
       background-image: url("/images/01@1X.png");
     }
-
   }
 
   &-second {
+    .image-wrapper {
+      padding-left: 100px;
+
+      .rotated-text {
+        top: 9%;
+        left: 10%;
+        color: $light-grey;
+        transform: rotate(-90deg);
+      }
+    }
+
     .training-title {
       background-image: url("/images/02@1X.png");
     }
@@ -120,9 +141,12 @@
 
   .training-title {
     height: 110px;
+    position: relative;
     background-repeat: no-repeat;
 
     &-text {
+      bottom: 0;
+      position: absolute;
       @include text-styles($dark-grey, 42px, 700, $playfair-font);
     }
   }
@@ -138,13 +162,6 @@
     line-height: 25px;
     margin-bottom: 70px;
     @include text-styles($grey, 14px, 400, $poppins-font);
-  }
-
-  .rotated-text {
-    width: 100px;
-    height: 100px;
-    color: $light-grey;
-    transform: rotate(-90deg);
   }
 }
 

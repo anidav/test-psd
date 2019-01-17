@@ -1,0 +1,75 @@
+@media (max-width: 1024px) {
+  .content {
+
+    //header section styles
+
+    .header {
+      flex-direction: column;
+
+      &-links {
+        width: 100%;
+        margin-left: 0;
+
+        &-list {
+          display: flex;
+        }
+
+        &-items {
+          padding: 40px 40px 20px 40px;
+          transform: rotate(0deg);
+        }
+
+        &-icons {
+          margin-top: 0;
+        }
+      }
+    }
+
+    //medias section styles
+
+    .medias-section {
+
+      &-wrapper {
+        margin-left: 20px;
+        margin-right: 20px;
+        position: relative;
+        flex-direction: column;
+
+        &-image {
+          width: 100%;
+        }
+
+        &-video {
+          width: 100%;
+          height: 300px;
+          margin-top: 50px;
+          position: static;
+        }
+      }
+    }
+
+    //trainig section styles
+
+    .training-section {
+      margin-left: 20px;
+
+      .training-description {
+        margin-bottom: 20px;
+      }
+
+      &-first {
+        margin-right: 20px;
+      }
+
+      &-second {
+        .image-wrapper {
+          padding-left: 0;
+        }
+
+        .rotated-text {
+          left: -5%;
+        }
+      }
+    }
+  }
+}

@@ -1,56 +1,56 @@
-@media (max-width: 1024px) {
-  .content {
-
-    //medias section styles
-
-    .medias-section {
-
-      &-wrapper {
-        flex-direction: column;
-        margin-left: 20px;
-        position: relative;
-
-        &-image {
-          width: 100%;
-        }
-
-        &-video {
-          width: 100%;
-          height: 300px;
-          margin-top: 50px;
-          position: static;
-        }
-      }
-    }
-
-    //trainig section styles
-
-    .training-section {
-      margin-left: 20px;
-
-      .training-description {
-        margin-bottom: 20px;
-      }
-
-      &-first {
-        margin-right: 20px;
-      }
-
-      &-second {
-        .image-wrapper {
-          padding-left: 0;
-        }
-
-        .rotated-text {
-          left: -5%;
-        }
-      }
-    }
-  }
-}
-
 @media (max-width: 768px) {
   .content {
+
+    //header section styles
+
+    .header {
+      margin: 0 30px;
+
+      &-content {
+        width: 100%;
+
+        &-cover {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          &-image {
+            width: 100%;
+          }
+
+          &-description {
+            position: static;
+            margin-top: 20px;
+
+            .description-title {
+              font-size: 45px;
+            }
+          }
+        }
+
+        .page {
+          display: none;
+        }
+      }
+
+      &-links {
+        display: none;
+      }
+
+      &-content-navigation {
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+
+        .header-menu-wrapper {
+          display: block;
+        }
+
+        &-wrapper {
+          display: none;
+        }
+      }
+    }
 
     //training section styles
 
@@ -98,7 +98,7 @@
           width: 100%;
 
           figure {
-            margin-left: 20px;
+            margin-left: 0;
             margin-right: 0;
           }
         }

@@ -1,0 +1,58 @@
+@media (max-width: 1024px) {
+  .content {
+    .training-section {
+      margin-left: 20px;
+
+      .training-description {
+        margin-bottom: 20px;
+      }
+
+      &-first {
+        margin-right: 20px;
+      }
+
+      &-second {
+        .image-wrapper {
+          padding-left: 0;
+        }
+
+        .rotated-text {
+          left: -5%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    .training-section {
+
+      &-wrapper {
+        width: 100%;
+        margin-left: 20px;
+        margin-bottom: 50px;
+      }
+
+      &-first {
+        flex-direction: column;
+
+        .training-description {
+          padding-right: 20px;
+        }
+      }
+
+      &-second {
+        flex-direction: column;
+
+        .image-wrapper {
+          order: 2;
+        }
+
+        .training-description {
+          width: 90%;
+        }
+      }
+    }
+  }
+}

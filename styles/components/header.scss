@@ -15,6 +15,18 @@
       &-navigation {
         width: 45%;
 
+        .header-menu-wrapper {
+          display: none;
+
+          img {
+            width: 50px;
+          }
+        }
+
+        &-wrapper {
+          margin-left: 10%;
+        }
+
         &-item {
           padding: 0 20px;
           @include text-with-spacing($dark-grey, 900);

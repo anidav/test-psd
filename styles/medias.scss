@@ -52,6 +52,22 @@
 @media (max-width: 768px) {
   .content {
 
+    //header section styles
+
+    .header-content-navigation {
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+
+      .header-menu-wrapper {
+        display: block;
+      }
+
+      &-wrapper {
+        display: none;
+      }
+    }
+
     //training section styles
 
     .training-section {

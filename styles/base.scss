@@ -2,6 +2,12 @@ body {
   margin: 0;
 }
 
+body, html {
+  margin: 0 auto;
+  max-width: 1440px;
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -102,7 +108,7 @@ figure {
 }
 
 
-//base styles for header dropdowns
+//base styles for header and footer dropdowns
 
 .dropdown {
   position: relative;

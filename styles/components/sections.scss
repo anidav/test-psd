@@ -54,14 +54,38 @@
   }
 
   &-content {
-    margin-top: 150px;
     margin-bottom: 70px;
-    justify-content: flex-start;
+
+    .slider {
+      height: auto;
+      display: flex;
+      overflow-x: hidden;
+    }
+
+    .slide {
+      flex-shrink: 0;
+      height: 100%;
+    }
+
+    .jumping-links {
+      width: 150px;
+      margin: 0 auto;
+      margin-top: 30px;
+
+      li {
+        width: 20px;
+        padding: 5px;
+        border-radius: 50%;
+        text-align: center;
+        background-color: $light-grey;
+      }
+    }
 
     &-item {
       width: 250px;
       height: 320px;
-      margin-left: 170px;
+      margin: 0 auto;
+      margin-top: 150px;
       position: relative;
       background-color: $light-grey;
 

@@ -2,93 +2,94 @@
 @import "../fonts";
 
 //styles for header section
+.header {
+  width: 95%;
+}
 
-.content {
+.header,
+.footer {
+  padding-top: 40px;
+  margin: 0 auto;
 
-  .header,
-  .footer {
-    padding-top: 40px;
-    margin: 0 50px 0 100px;
+  &-content {
+    width: 93%;
 
-    &-content {
-      width: 93%;
+    &-cover {
+      margin-top: 30px;
+      position: relative;
+    }
 
-      &-navigation {
+    &-image {
+      width: 87%;
 
-        .header-menu-wrapper {
-          display: none;
-
-          img {
-            width: 50px;
-          }
-        }
-
-        &-wrapper {
-          margin-left: 10%;
-        }
-
-        &-item {
-          padding: 0 20px;
-          letter-spacing: 4px;
-          text-transform: uppercase;
-          color: $dark-grey;
-          font: 900 0.6rem $roboto-font;
-        }
-      }
-
-      &-cover {
-        margin-top: 30px;
-        position: relative;
-
-        &-image {
-          width: 87%;
-
-          img {
-            box-shadow: -6px 19px 61px 2px $shadow-color;
-          }
-        }
-
-        &-description {
-          position: absolute;
-          top: 35%;
-          left: 0;
-
-          .description-title {
-            color: $dark-grey;
-            font: 700 4rem $playfair-font;
-          }
-
-          .description-text {
-            color: $grey;
-            font: 400 0.9rem $poppins-font;
-          }
-        }
-      }
-
-      .page {
-        width: 13%;
+      img {
+        box-shadow: -6px 19px 61px 2px $shadow-color;
       }
     }
 
-    &-links {
-      width: 5%;
-      margin-left: 2%;
+    &-description {
+      position: absolute;
+      top: 35%;
+      left: 0;
 
-      &-items {
-        padding: 40px 0;
-        cursor: pointer;
-        color: $light-grey;
-        letter-spacing: 4px;
-        transform: rotate(-90deg);
-        text-transform: uppercase;
-        font: 900 0.6rem $roboto-font;
+      .description-title {
+        color: $dark-grey;
+        font: 700 4rem $playfair-font;
       }
 
-      &-icons {
-        width: 18px;
-        height: 18px;
-        margin-top: 30px;
+      .description-text {
+        color: $grey;
+        font: 400 0.9rem $poppins-font;
       }
+    }
+
+    .page {
+      width: 13%;
+    }
+  }
+
+  &-navigation {
+
+    .menu-wrapper {
+      display: none;
+
+      img {
+        width: 50px;
+      }
+    }
+
+    &-content {
+      margin-left: 10%;
+    }
+
+    &-item {
+      padding: 0 20px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: $dark-grey;
+      font: 900 0.6rem $roboto-font;
+    }
+  }
+
+  &-links {
+    width: 5%;
+    margin-left: 2%;
+
+    &-items {
+      padding: 40px 0;
+      cursor: pointer;
+      color: $light-grey;
+      letter-spacing: 4px;
+      transform: rotate(-90deg);
+      text-transform: uppercase;
+      font: 900 0.6rem $roboto-font;
+    }
+
+    &-icons {
+      width: 18px;
+      height: 18px;
+      margin-top: 30px;
     }
   }
 }
+

@@ -103,19 +103,19 @@ figure {
 .blue-small-text {
   @extend .small-text;
   color: $light-blue;
-  font: 900 9px $roboto-font;
+  font: 900 0.6rem $roboto-font;
 }
 
 .dark-small-text {
   @extend .small-text;
   color: $dark-grey;
-  font: 900 9px $roboto-font;
+  font: 900 0.6rem $roboto-font;
 }
 
 .grey-small-text {
   @extend .small-text;
   color: $grey;
-  font: 700 9px $roboto-font;
+  font: 700 0.6rem $roboto-font;
 }
 
 

@@ -95,16 +95,27 @@ figure {
   position: absolute;
 }
 
+.small-text {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
 .blue-small-text {
-  @include text-with-spacing($light-blue, 900);
+  @extend .small-text;
+  color: $light-blue;
+  font: 900 9px $roboto-font;
 }
 
 .dark-small-text {
-  @include text-with-spacing($dark-grey, 900);
+  @extend .small-text;
+  color: $dark-grey;
+  font: 900 9px $roboto-font;
 }
 
 .grey-small-text {
-  @include text-with-spacing($grey, 700);
+  @extend .small-text;
+  color: $grey;
+  font: 700 9px $roboto-font;
 }
 
 

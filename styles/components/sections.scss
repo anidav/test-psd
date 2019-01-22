@@ -1,3 +1,6 @@
+@import "../variables";
+@import "../fonts";
+
 // styles for medias section (1)
 
 .medias-section {
@@ -5,8 +8,9 @@
 
   &-title {
     padding: 0 10px;
+    color: $dark-grey;
     text-align: center;
-    @include text-styles($dark-grey, 26px, 400, $playfair-font);
+    font: 400 26px $playfair-font;
   }
 
   &-wrapper {
@@ -20,8 +24,9 @@
         margin-left: 35px;
 
         &-text {
+          color: $grey;
           margin: 50px 0;
-          @include text-styles($grey, 14px, 400, $poppins-font);
+          font: 400 14px $poppins-font;
         }
       }
     }
@@ -49,7 +54,8 @@
     padding-top: 220px;
 
     &-text {
-      @include text-styles($dark-grey, 42px, 700, $playfair-font);
+      color: $dark-grey;
+      font: 700 42px $playfair-font;
     }
   }
 
@@ -69,8 +75,7 @@
 
     .jumping-links {
       width: 150px;
-      margin: 0 auto;
-      margin-top: 30px;
+      margin: 30px auto 0 auto;
 
       li {
         width: 20px;
@@ -84,9 +89,8 @@
     &-item {
       width: 250px;
       height: 320px;
-      margin: 0 auto;
-      margin-top: 150px;
       position: relative;
+      margin: 150px auto 0 auto;
       background-color: $light-grey;
 
       &-wrapper {
@@ -99,12 +103,14 @@
           margin-top: 30px;
 
           &-title {
-            @include text-styles($dark-grey, 26px, 400, $playfair-font);
+            color: $dark-grey;
+            font: 400 26px $playfair-font;
           }
 
           &-price {
             margin-top: 20px;
-            @include text-styles($light-pink, 20px, 400, $poppins-font);
+            color: $light-pink;
+            font: 400 20px $poppins-font;
           }
         }
       }
@@ -164,8 +170,9 @@
 
     &-text {
       bottom: 0;
+      color: $dark-grey;
       position: absolute;
-      @include text-styles($dark-grey, 42px, 700, $playfair-font);
+      font: 700 42px $playfair-font;
     }
   }
 
@@ -177,9 +184,10 @@
   }
 
   .training-description {
+    color: $grey;
     line-height: 25px;
     margin-bottom: 70px;
-    @include text-styles($grey, 14px, 400, $poppins-font);
+    font: 400 14px $poppins-font;
   }
 }
 
@@ -197,13 +205,15 @@
     padding: 120px 0;
 
     &-title {
-      @include text-styles($dark-grey, 42px, 700, $playfair-font);
+      color: $dark-grey;
+      font: 700 42px $playfair-font;
     }
 
     &-description {
+      color: $grey;
       margin: 20px 0;
       text-align: center;
-      @include text-styles($grey, 14px, 400, $poppins-font);
+      font: 400 14px $poppins-font;
     }
 
     &-input-wrapper {
@@ -239,7 +249,8 @@
 
       &-title {
         margin: 40px;
-        @include text-styles($dark-grey, 32px, 700, $playfair-font);
+        color: $dark-grey;
+        font: 700 32px $playfair-font;
       }
     }
   }

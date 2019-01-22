@@ -32,7 +32,7 @@
           letter-spacing: 4px;
           text-transform: uppercase;
           color: $dark-grey;
-          font: 900 9px $roboto-font;
+          font: 900 0.6rem $roboto-font;
         }
       }
 
@@ -55,12 +55,12 @@
 
           .description-title {
             color: $dark-grey;
-            font: 700 62px $playfair-font;
+            font: 700 4rem $playfair-font;
           }
 
           .description-text {
             color: $grey;
-            font: 400 14px $poppins-font;
+            font: 400 0.9rem $poppins-font;
           }
         }
       }
@@ -81,7 +81,7 @@
         letter-spacing: 4px;
         transform: rotate(-90deg);
         text-transform: uppercase;
-        font: 900 9px $roboto-font;
+        font: 900 0.6rem $roboto-font;
       }
 
       &-icons {

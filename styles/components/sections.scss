@@ -10,7 +10,7 @@
     padding: 0 10px;
     color: $dark-grey;
     text-align: center;
-    font: 400 26px $playfair-font;
+    font: 400 1.7rem $playfair-font;
   }
 
   &-wrapper {
@@ -26,7 +26,7 @@
         &-text {
           color: $grey;
           margin: 50px 0;
-          font: 400 14px $poppins-font;
+          font: 400 0.9rem $poppins-font;
         }
       }
     }
@@ -55,7 +55,7 @@
 
     &-text {
       color: $dark-grey;
-      font: 700 42px $playfair-font;
+      font: 700 2.7rem $playfair-font;
     }
   }
 
@@ -104,13 +104,13 @@
 
           &-title {
             color: $dark-grey;
-            font: 400 26px $playfair-font;
+            font: 400 1.7rem $playfair-font;
           }
 
           &-price {
             margin-top: 20px;
             color: $light-pink;
-            font: 400 20px $poppins-font;
+            font: 400 1.25rem $poppins-font;
           }
         }
       }
@@ -172,7 +172,7 @@
       bottom: 0;
       color: $dark-grey;
       position: absolute;
-      font: 700 42px $playfair-font;
+      font: 700 2.7rem $playfair-font;
     }
   }
 
@@ -187,7 +187,7 @@
     color: $grey;
     line-height: 25px;
     margin-bottom: 70px;
-    font: 400 14px $poppins-font;
+    font: 400 0.9rem $poppins-font;
   }
 }
 
@@ -206,14 +206,14 @@
 
     &-title {
       color: $dark-grey;
-      font: 700 42px $playfair-font;
+      font: 700 2.7rem $playfair-font;
     }
 
     &-description {
       color: $grey;
       margin: 20px 0;
       text-align: center;
-      font: 400 14px $poppins-font;
+      font: 400 0.9rem $poppins-font;
     }
 
     &-input-wrapper {
@@ -250,7 +250,7 @@
       &-title {
         margin: 40px;
         color: $dark-grey;
-        font: 700 32px $playfair-font;
+        font: 700 2rem $playfair-font;
       }
     }
   }

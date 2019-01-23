@@ -1,0 +1,42 @@
+@import "../variables";
+@import "../fonts";
+
+// styles for medias section (1)
+
+.media {
+  width: 90%;
+  margin: 150px auto 0 auto;
+
+  &-title {
+    padding: 0 10px;
+    color: $dark-grey;
+    text-align: center;
+    font: 400 1.7rem $playfair-font;
+  }
+
+  &-content {
+    position: relative;
+  }
+
+  &-image {
+    width: 46%;
+  }
+
+  &-description {
+    margin-left: 35px;
+
+    &-text {
+      color: $grey;
+      margin: 50px 0;
+      font: 400 0.9rem $poppins-font;
+    }
+  }
+
+  &-video {
+    top: 0;
+    width: 50%;
+    right: 10%;
+    height: 550px;
+    position: absolute;
+  }
+}

@@ -1,45 +1,7 @@
 @import "../variables";
 @import "../fonts";
 
-// styles for medias section (1)
 
-.medias-section {
-  margin-top: 150px;
-
-  &-title {
-    padding: 0 10px;
-    color: $dark-grey;
-    text-align: center;
-    font: 400 1.7rem $playfair-font;
-  }
-
-  &-wrapper {
-    margin-left: 100px;
-    position: relative;
-
-    &-image {
-      width: 46%;
-
-      &-description {
-        margin-left: 35px;
-
-        &-text {
-          color: $grey;
-          margin: 50px 0;
-          font: 400 0.9rem $poppins-font;
-        }
-      }
-    }
-
-    &-video {
-      top: 0;
-      width: 50%;
-      right: 10%;
-      height: 550px;
-      position: absolute;
-    }
-  }
-}
 
 // styles for slider section (2)
 

@@ -52,27 +52,30 @@
 
   //medias section styles
 
-  .medias-section {
+  .media {
     margin-top: 30px;
   }
 
   //slider section styles
 
-  .slider-section-content-item {
-    background-color: transparent;
+  .slider {
 
-    &-wrapper {
-      left: 0;
-      width: 295px;
+    &-item-wrapper {
+      background-color: transparent;
+
+      .slider-item {
+        left: 0;
+        width: 295px;
+      }
     }
   }
 
   //training section styles
 
-  .training-section {
+  .training {
     margin-top: 70px;
 
-    &-wrapper {
+    &-content {
       width: 100%;
       margin-left: 20px;
       margin-bottom: 50px;

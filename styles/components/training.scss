@@ -1,0 +1,76 @@
+@import "../variables";
+@import "../fonts";
+
+// styles for training section (3)
+
+.training {
+  width: 85%;
+  margin: 170px auto 0 auto;
+
+  &-content {
+    width: 40%;
+  }
+
+  &-first {
+    margin-bottom: 120px;
+
+    .rotated-text {
+      top: 10%;
+      right: -5%;
+      color: $light-grey;
+      transform: rotate(-90deg);
+    }
+
+    .training-title {
+      background-image: url("/images/01@1X.png");
+    }
+  }
+
+  &-second {
+    .image-wrapper {
+      padding-left: 100px;
+
+      .rotated-text {
+        top: 9%;
+        left: 10%;
+        color: $light-grey;
+        transform: rotate(-90deg);
+      }
+    }
+
+    .training-title {
+      background-image: url("/images/02@1X.png");
+    }
+
+    .training-description {
+      width: 59%;
+    }
+  }
+
+  .training-title {
+    height: 110px;
+    position: relative;
+    background-repeat: no-repeat;
+
+    &-text {
+      bottom: 0;
+      color: $dark-grey;
+      position: absolute;
+      font: 700 2.7rem $playfair-font;
+    }
+  }
+
+  .title-border {
+    width: 25px;
+    height: 2px;
+    margin: 18px 0 30px 0;
+    background-color: $light-blue;
+  }
+
+  .training-description {
+    color: $grey;
+    line-height: 25px;
+    margin-bottom: 70px;
+    font: 400 0.9rem $poppins-font;
+  }
+}

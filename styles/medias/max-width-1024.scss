@@ -47,24 +47,19 @@
 
   //trainig section styles
 
-  .training-section {
-    margin-left: 20px;
+  .training {
 
     .training-description {
       margin-bottom: 20px;
     }
 
-    &-first {
-      margin-right: 20px;
-    }
-
     &-second {
       .image-wrapper {
         padding-left: 0;
-      }
 
-      .rotated-text {
-        left: -5%;
+        .rotated-text {
+          left: -5%;
+        }
       }
     }
   }

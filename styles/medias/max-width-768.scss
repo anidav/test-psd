@@ -58,12 +58,15 @@
 
   //slider section styles
 
-  .slider-section-content-item {
-    background-color: transparent;
+  .slider {
 
-    &-wrapper {
-      left: 0;
-      width: 295px;
+    &-item-wrapper {
+      background-color: transparent;
+
+      .slider-item {
+        left: 0;
+        width: 295px;
+      }
     }
   }
 

@@ -3,7 +3,7 @@
 
 //styles for join-club section
 
-.join-club-section {
+.join-club {
   margin-top: -120px;
   background-size: cover;
   background-position: center;
@@ -21,12 +21,12 @@
 
     &-description {
       color: $grey;
-      margin: 20px 0;
+      margin: 20px 5px;
       text-align: center;
       font: 400 0.9rem $poppins-font;
     }
 
-    &-input-wrapper {
+    &-wrapper {
       width: 40%;
       position: relative;
 
@@ -51,13 +51,13 @@
   }
 
   &-content {
-    .join-image-wrapper {
+    .image-wrapper {
       width: 50%;
     }
 
-    .join-image-description {
+    .image-description {
 
-      &-title {
+      .description-title {
         margin: 40px;
         color: $dark-grey;
         font: 700 2rem $playfair-font;
